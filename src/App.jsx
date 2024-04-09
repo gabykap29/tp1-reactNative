@@ -1,18 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import UseStateComp from './components/UseState/UseStateComp';
-import UseEffectComp from './components/UseEffectComp/UseEffectComp';
-
-import { YugiohContextProvider } from './components/context/YugiohContext'; // Importa el contexto completo
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import UseStateComp from "./components/UseState/UseStateComp";
+import UseEffectComp from "./components/UseEffectComp/UseEffectComp";
+import NavigationBar from "./components/NavigationBar/NavigationBar";
+import { YugiohContextProvider } from "./components/context/YugiohContext";
 
 const App = () => {
   return (
     <Router>
-      <YugiohContextProvider> {/* Envuelve la aplicación con el proveedor del contexto */}
+      <NavigationBar />
+      <YugiohContextProvider>
         <Routes>
-          <Route path="/" exact element={<UseStateComp />} /> {/* Usa 'element' en vez de 'component' */}
-          <Route path="/use-effect" element={<UseEffectComp />} />
-          {/* Add more routes as needed */}
+          <Route path="/use-effect" exact element={<UseStateComp />} />
+          <Route path="/" element={<UseEffectComp />} />
         </Routes>
       </YugiohContextProvider>
     </Router>
