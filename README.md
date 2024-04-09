@@ -1,8 +1,17 @@
-# React + Vite
+# Proyecto React con Implementación de Hooks
+Este proyecto de React incluye la implementación de los siguientes Hooks: useState, useEffect y useContext. Estos Hooks se utilizan para gestionar las búsquedas de cartas de Yu-Gi-Oh! y mostrar los resultados al usuario. Además, se muestra cómo estos Hooks pueden ser fácilmente adaptados y utilizados en un proyecto más complejo.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Uso en el Proyecto
+# UseEffectComp
+Este componente se utiliza para realizar búsquedas de cartas y mostrar los resultados al usuario. Utiliza el Hook useEffect para cargar los datos cuando el componente se monta por primera vez.
 
-Currently, two official plugins are available:
+# UseStateComp
+Este componente se utiliza para mostrar las últimas búsquedas realizadas por el usuario. Utiliza el Hook useState para gestionar el estado de las búsquedas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# YugiohContext y YugiohContextProvider
+Estos archivos proporcionan un contexto y un proveedor para compartir el estado de las búsquedas entre los diferentes componentes. Utilizan el Hook useContext y el Hook useState respectivamente.
+
+# Instalación
+Para ejecutar este proyecto localmente, sigue estos pasos:
+
+1. git clone https://github.com/tu-usuario/tu-repositorio.git
