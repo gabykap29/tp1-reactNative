@@ -14,4 +14,13 @@ Estos archivos proporcionan un contexto y un proveedor para compartir el estado 
 # Instalación
 Para ejecutar este proyecto localmente, sigue estos pasos:
 
-1. git clone https://github.com/tu-usuario/tu-repositorio.git
+1. git clone https://github.com/gabykap29/tp1-reactNative.git 
+
+2. cd Tp1-ReactNative
+
+3. npm install
+
+4. npm run dev
+
+5. ingresa a http://localhost:5173/ 
+
